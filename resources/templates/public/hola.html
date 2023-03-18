@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}
+Hola
+{% endblock %}
+
+{% block content %}
+<h1>Hola</h1>
+
+<form action="/hola" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre" class="form-control">
+    <button type="submit" class="btn btn-primary mt-2">Hola</button>
+</form>
+
+<h2 class="mt-4">Hola {{ nombre }}!</h2>
+{% endblock %}

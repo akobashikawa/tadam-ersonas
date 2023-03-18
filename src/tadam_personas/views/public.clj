@@ -14,6 +14,16 @@
   [req]
     (render-HTML req "public/holamundo.html" {}))
 
+(defn hola
+  ;; View HTML
+  [req]
+    (render-HTML req "public/hola.html" {:nombre "Mundo"}))
+
+(defn hola-action
+  ;; View HTML
+  [req]
+    (render-HTML req "public/hola.html" {:nombre (-> req :params :nombre)}))
+
 (defn api
   ;; View JSON
   [req]

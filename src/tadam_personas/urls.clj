@@ -1,13 +1,14 @@
 (ns tadam-personas.urls
-  (:require
-   [compojure.core :refer [defroutes GET]]
-   [compojure.route :as route]
-   [tadam-personas.views.public :as view-public]))
+  (:require [compojure.core :refer [defroutes GET POST]]
+            [compojure.route :as route]
+            [tadam-personas.views.public :as view-public]))
 
 (defroutes public
   ;; Urls public pages
   (GET "/" [] view-public/index)
   (GET "/holamundo" [] view-public/holamundo)
+  (GET "/hola" [] view-public/hola)
+  (POST "/hola" [] view-public/hola-action)
   (GET "/api" [] view-public/api))
 
 
