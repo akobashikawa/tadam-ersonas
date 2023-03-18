@@ -20,8 +20,5 @@ lein check-format
 - [holamundo-static](https://github.com/akobashikawa/tadam-personas/tree/holamundo-static)
     - Saludar al mundo usando una página estática
 
-- holamundo-mvc
+- [holamundo-mvc](https://github.com/akobashikawa/tadam-personas/tree/holamundo-mvc)
     - Saludar al mundo usando MVC
-
-- holamundo-rest
-    - Saludar al mundo usando REST
