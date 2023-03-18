@@ -15,13 +15,7 @@ lein check-idiomatic
 lein check-format
 ```
 
-## Branches
+## Hola Mundo Static
 
-- [holamundo-static](https://github.com/akobashikawa/tadam-personas/tree/holamundo-static)
-    - Saludar al mundo usando una página estática
-
-- holamundo-mvc
-    - Saludar al mundo usando MVC
-
-- holamundo-rest
-    - Saludar al mundo usando REST
+- Saluda al mundo con una página estática
+- `resources\public\holamundo.html`
