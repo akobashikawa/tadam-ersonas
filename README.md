@@ -5,13 +5,13 @@ Estudiando Clojure.
 ## Hola MVC
 
 - Saluda a alguien con una página dinámica MVC
-- [src\tadam_personas\urls.clj](https://github.com/akobashikawa/tadam-personas/blob/master/src/tadam_personas/urls.clj)
+- [src\tadam_personas\urls.clj](https://github.com/akobashikawa/tadam-personas/blob/hola-mvc/src/tadam_personas/urls.clj)
 
 ```clj
 (POST "/hola" [] view-public/hola-action)
 ```
 
-- [src\tadam_personas\views\public.clj](https://github.com/akobashikawa/tadam-personas/blob/master/src/tadam_personas/views/public.clj)
+- [src\tadam_personas\views\public.clj](https://github.com/akobashikawa/tadam-personas/blob/hola-mvc/src/tadam_personas/views/public.clj)
 
 ```clj
 (defn hola
@@ -25,7 +25,7 @@ Estudiando Clojure.
     (render-HTML req "public/hola.html" {:nombre (-> req :params :nombre)}))
 ```
 
-- [resources\templates\public\hola.html](https://github.com/akobashikawa/tadam-personas/blob/master/resources/templates/public/hola.html)
+- [resources\templates\public\hola.html](https://github.com/akobashikawa/tadam-personas/blob/hola-mvc/resources/templates/public/hola.html)
 
 ```clj
 {% block content %}
