@@ -7,6 +7,7 @@
 (defroutes public
   ;; Urls public pages
   (GET "/" [] view-public/index)
+  (GET "/holamundo" [] view-public/holamundo)
   (GET "/api" [] view-public/api))
 
 

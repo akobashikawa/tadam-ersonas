@@ -9,6 +9,11 @@
   [req]
     (render-HTML req "public/welcome.html" {}))
 
+(defn holamundo
+  ;; View HTML
+  [req]
+    (render-HTML req "public/holamundo.html" {}))
+
 (defn api
   ;; View JSON
   [req]
