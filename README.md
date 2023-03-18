@@ -17,7 +17,7 @@ lein check-format
 
 ## Branches
 
-- holamundo-static
+- [holamundo-static](https://github.com/akobashikawa/tadam-personas/tree/holamundo-static)
     - Saludar al mundo usando una página estática
 
 - holamundo-mvc
