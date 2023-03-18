@@ -22,3 +22,6 @@ lein check-format
 
 - [holamundo-mvc](https://github.com/akobashikawa/tadam-personas/tree/holamundo-mvc)
     - Saludar al mundo usando MVC
+
+- [hola-mvc](https://github.com/akobashikawa/tadam-personas/tree/hola-mvc)
+    - - Saluda a alguien usando MVC
