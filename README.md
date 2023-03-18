@@ -17,7 +17,7 @@ lein check-format
 
 ## Hola MVC
 
-- Saluda a alguine con una página dinámica MVC
+- Saluda a alguien con una página dinámica MVC
 - [src\tadam_personas\urls.clj](https://github.com/akobashikawa/tadam-personas/blob/master/src/tadam_personas/urls.clj)
 
 ```clj
