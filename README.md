@@ -2,19 +2,6 @@
 
 Estudiando Clojure.
 
-## Usage
-
-```sh
-lein run
-```
-
-## Testing
-
-``` sh
-lein check-idiomatic
-lein check-format
-```
-
 ## Hola MVC
 
 - Saluda a alguien con una página dinámica MVC
