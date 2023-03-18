@@ -2,7 +2,7 @@
 
 Estudiando Clojure.
 
-## Usage
+## Uso
 
 ```sh
 lein run
@@ -15,7 +15,7 @@ lein check-idiomatic
 lein check-format
 ```
 
-## Branches
+## Ramas
 
 - [holamundo-static](https://github.com/akobashikawa/tadam-personas/tree/holamundo-static)
     - Saludar al mundo usando una página estática
