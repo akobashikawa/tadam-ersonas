@@ -1,8 +1,13 @@
 ;;;; Views public web
 (ns tadam-personas.views.public
   (:require
-   [tadam.templates :refer [render-HTML render-JSON render-404]]
-   ))
+  ;;  [ring.util.response :refer :all]
+  ;;  [ring.util.request :refer [get-body-string]]
+   [cheshire.core :refer [parse-string]]
+   [tadam.templates :refer [render-HTML render-JSON render-404]]))
+
+;;debugging parts of expressions
+(defmacro dbg [x] `(let [x# ~x] (println "dbg:" '~x "=" x#) x#))
 
 (defn index
   ;; View HTML
@@ -23,6 +28,15 @@
   ;; View HTML
   [req]
     (render-HTML req "public/hola.html" {:nombre (-> req :params :nombre)}))
+
+(defn api-hola
+  ;; View HTML
+  [req]
+    (let [body (slurp (:body req))
+          params (parse-string body true)
+          nombre (get params :nombre)
+          saludo (str "Hola " nombre "!")]
+      (render-JSON req {:saludo saludo})))
 
 (defn api
   ;; View JSON

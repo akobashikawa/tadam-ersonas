@@ -9,7 +9,9 @@
   (GET "/holamundo" [] view-public/holamundo)
   (GET "/hola" [] view-public/hola)
   (POST "/hola" [] view-public/hola-action)
-  (GET "/api" [] view-public/api))
+  (GET "/api" [] view-public/api)
+  (GET "/api/hola" [] view-public/api-hola)
+  (POST "/api/hola" [] view-public/api-hola))
 
 
 (defroutes resources-routes
