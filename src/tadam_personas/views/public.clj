@@ -22,7 +22,8 @@
 (defn hola-action
   ;; View HTML
   [req]
-    (render-HTML req "public/hola.html" {:nombre (-> req :params :nombre)}))
+    (let [nombre (-> req :params :nombre)]
+     (render-HTML req "public/hola.html" {:nombre nombre})))
 
 (defn api
   ;; View JSON
